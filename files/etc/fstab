@@ -1,0 +1,25 @@
+#
+# /etc/fstab: static file system information
+#
+# <file system>					<dir>			<type>		<options>										<dump>	<pass>
+# BTRFS subvolumes --
+UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/home			btrfs		defaults,subvol=@home									0	0
+UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/.snapshots		btrfs		defaults,subvol=@snapshots								0	0
+
+UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/var/tmp		btrfs		defaults,subvol=@tmp									0	0
+UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/var/cache/pacman/pkg	btrfs		defaults,subvol=@pacman-cache								0	0
+UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/srv/docker		btrfs		defaults,subvol=@srv   								  	0	0
+UUID=d1232a39-479a-45ca-b954-02e9067b6b41       /boot             btrfs           defaults,subvol=@boot                                                                    0       0
+
+UUID=0276-F83E					/boot/efi		vfat		defaults										0	2
+
+# SnapRAID setup
+UUID=E40CC8A60CC874D8				/media/data0		ntfs		defaults,nofail,permissions								0	2
+UUID=6E60F31A01981982				/media/data1		ntfs		defaults,nofail,permissions								0	2
+UUID=314E93B21799C34C				/media/data2		ntfs		defaults,nofail,permissions								0	2
+UUID=2311E47079269A73				/media/parity0		ntfs		defaults,nofail,permissions								0	2
+/media/data0:/media/data1:/media/data2		/media/data		fuse.mergerfs	defaults,allow_other,category.create=eplfs,minfreespace=20G,fsname=unencPool		0	0
+
+UUID=EE5EB7615EB7216F				/media/windows-10	ntfs		defaults,nofail,permissions	0	2
+
+/media/data /srv/nfs4/data none bind 0 0

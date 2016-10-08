@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatically resume on a schedule (M-F)
+
+[Timer]
+Unit=auto-resume.service
+OnCalendar=Mon-Fri, 14:18
+WakeSystem=true
+Persistent=false
+
+[Install]
+WantedBy=multi-user.target

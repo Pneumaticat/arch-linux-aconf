@@ -1,0 +1,14 @@
+[Unit]
+Description=Resume fancontrol properly after wake/thaw
+After=suspend.target
+After=hibernate.target
+After=hybrid-sleep.target
+
+[Service]
+ExecStart=/usr/bin/systemctl restart fancontrol
+
+[Install]
+WantedBy=suspend.target
+WantedBy=hibernate.target
+WantedBy=hybrid-sleep.target
+

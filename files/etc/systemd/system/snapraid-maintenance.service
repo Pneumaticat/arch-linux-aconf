@@ -1,0 +1,6 @@
+[Unit]
+Description=SnapRAID maintenance
+ 
+[Service]
+User=root
+ExecStart=/bin/bash -c "snapraid sync && snapraid scrub"
