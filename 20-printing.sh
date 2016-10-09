@@ -7,21 +7,14 @@ AddPackage foomatic-db-nonfree # Foomatic - database extension consisting of man
 AddPackage foomatic-db-nonfree-ppds # Foomatic - non-free PPDs from printer manufacturers
 AddPackage foomatic-db-ppds # Foomatic - PPDs from printer manufacturers
 
-CopyFile /etc/cups/classes.conf 600 '' lp
-CreateFile /etc/cups/classes.conf.O 600 '' lp > /dev/null
 CopyFile /etc/cups/ppd/Brother_HL-2170W_series.ppd 640 '' lp
 CopyFile /etc/cups/ppd/Brother_HL-2170W_series.ppd.O 640 '' lp
-CopyFile /etc/cups/printers.conf 600 '' lp
-CopyFile /etc/cups/printers.conf.O 600 '' lp
-CopyFile /etc/cups/subscriptions.conf 640 '' lp
-CopyFile /etc/cups/subscriptions.conf.O 640 '' lp
 
 CreateLink /etc/systemd/system/multi-user.target.wants/org.cups.cupsd.path /usr/lib/systemd/system/org.cups.cupsd.path
 CreateLink /etc/systemd/system/printer.target.wants/org.cups.cupsd.service /usr/lib/systemd/system/org.cups.cupsd.service
 CreateLink /etc/systemd/system/sockets.target.wants/org.cups.cupsd.socket /usr/lib/systemd/system/org.cups.cupsd.socket
 
 # Avahi (?)
-
 CreateLink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket /usr/lib/systemd/system/avahi-daemon.socket
 CreateLink /etc/systemd/system/dbus-org.freedesktop.Avahi.service /usr/lib/systemd/system/avahi-daemon.service
 CreateLink /etc/systemd/system/multi-user.target.wants/avahi-daemon.service /usr/lib/systemd/system/avahi-daemon.service

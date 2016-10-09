@@ -15,6 +15,14 @@ IgnorePath '/srv/*'
 IgnorePath '/etc/grub.d/backup/*'
 IgnorePath '/etc/xml/catalog' # http://xmlsoft.org/catalog.html
 
+# CUPS files, which seem to have printer configuration but change _quite_ often
+IgnorePath '/etc/cups/classes.conf'
+IgnorePath '/etc/cups/classes.conf.O'
+IgnorePath '/etc/cups/printers.conf'
+IgnorePath '/etc/cups/printers.conf.O'
+IgnorePath '/etc/cups/subscriptions.conf'
+IgnorePath '/etc/cups/subscriptions.conf.O'
+
 # Recreated files
 IgnorePath '/usr/lib/ruby/gems/*'
 IgnorePath '/usr/lib/node_modules/*'
