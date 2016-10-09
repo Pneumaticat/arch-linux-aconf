@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -e -u
+
+next_day_of_week=$(date +%u -d "tomorrow")
+
+echo "Next day of week: $next_day_of_week"
+
+if [ "$next_day_of_week" = "6" ] || [ "$next_day_of_week" = "7" ]; then
+	# Weekend
+	wake_time=$(date +%s -d "tomorrow 08:00")
+else
+	# Weekday
+	wake_time=$(date +%s -d "tomorrow 14:18")
+fi
+
+echo "Next wake time: $wake_time"
+echo "Setting wake timer..."
+
+rtcwake --mode no --time $wake_time
+
+systemctl hibernate

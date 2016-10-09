@@ -3,4 +3,4 @@ Description=Hibernate
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/systemctl hibernate
+ExecStart=/usr/local/sbin/auto-hibernate-and-resume
