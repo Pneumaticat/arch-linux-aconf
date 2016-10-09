@@ -1,3 +1,5 @@
+# === Files ===
+
 IgnorePath '/.snapshots/*' # BTRFS snapshots
 IgnorePath '/var/tmp/*'
 IgnorePath '/var/lib/*'
@@ -113,3 +115,15 @@ IgnorePath '/usr/lib/gtk-3.0/3.0.0/immodules.cache'
 IgnorePath '/etc/lvm/cache/.cache' # "The vgscan command scans all supported disk devices in the system looking for LVM physical volumes and volume groups. This builds the LVM cache in the /etc/lvm/.cache file, which maintains a listing of current LVM devices."
 
 IgnorePath '/usr/share/perl5/vendor_perl/XML/SAX/ParserDetails.ini'
+
+# === Packages! ===
+
+# Windows 10 fonts, because they can't be automatically compiled
+IgnorePackage --foreign ttf-ms-win10 # Microsoft Windows 10 TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-japanese # Microsoft Windows 10 Japanese TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-korean # Microsoft Windows 10 Korean TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-other # Microsoft Windows 10 Other TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-sea # Microsoft Windows 10 Southeast Asian TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-thai # Microsoft Windows 10 Thai TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-zh_cn # Microsoft Windows 10 Simplified Chinese TrueType fonts
+IgnorePackage --foreign ttf-ms-win10-zh_tw # Microsoft Windows 10 Traditional Chinese TrueType fonts
