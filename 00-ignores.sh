@@ -75,6 +75,7 @@ IgnorePath '/usr/share/.mono/certs/Trust/*'
 # Development - Languages - Python
 
 IgnorePath '/usr/lib/python2.7/site-packages/*.pyc'
+IgnorePath '/usr/lib/python3.5/site-packages/*.pyc'
 IgnorePath '/usr/share/gcc-*/python/*/__pycache__/*.pyc'
 IgnorePath '/usr/share/gdb/python/*/__pycache__/*.pyc'
 IgnorePath '/usr/share/nautilus-python/extensions/*.pyc'

@@ -38,4 +38,3 @@ AddPackage cargo # Rust package manager
 AddPackage composer # Dependency Manager for PHP
 AddPackage --foreign android-studio # A new Android development environment based on IntelliJ IDEA.
 CopyFile /etc/mono/registry/last-btime '' kevin users
-CopyFile /usr/lib/python3.5/site-packages/PyQt4/__pycache__/__init__.cpython-35.pyc
