@@ -1,4 +1,3 @@
-
 AddPackage --foreign skypeforlinux-bin # Skype for Linux WebRTC Alpha
 AddPackage emacs # The extensible, customizable, self-documenting real-time display editor
 AddPackage electron # Build cross platform desktop apps with web technologies
@@ -11,9 +10,9 @@ AddPackage desmume # Nintendo DS emulator
 AddPackage libreoffice-fresh # LibreOffice branch which contains new features and program enhancements
 AddPackage pinta # Drawing/editing program modeled after Paint.NET. It's goal is to provide a simplified alternative to GIMP for casual users
 AddPackage gimp # GNU Image Manipulation Program
-
 AddPackage gocr # Open-source character recognition (OCR)
 AddPackage gparted # A Partition Magic clone, frontend to GNU Parted
+AddPackage --foreign grub-customizer # A graphical grub2 settings manager
 AddPackage --foreign minecraft # An open-world game whose gameplay revolves around breaking and placing blocks
 AddPackage redshift # Adjusts the color temperature of your screen according to your surroundings.
 AddPackage chromium # The open-source project behind Google Chrome, an attempt at creating a safer, faster, and more stable browser
@@ -48,5 +47,4 @@ AddPackage --foreign chromium-widevine # A browser plugin designed for the viewi
 AddPackage --foreign dolphin-emu-git # A GameCube / Wii / Triforce emulator
 AddPackage --foreign feedthebeast # Feed The Beast offers many different styles of Minecraft modpacks to the community, catering to all tastes.
 AddPackage --foreign filebot # The ultimate tool to rename TV/anime shows, download subtitles, and validate checksums 
-
 AddPackage --foreign pepper-flash # Adobe's Pepper Flash plugin
