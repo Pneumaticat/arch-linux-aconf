@@ -1,8 +1,8 @@
 GRUB_DEFAULT="saved"
 GRUB_TIMEOUT="5"
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=97ccfdd4-d494-4947-93c3-cf0f735dc6e4"
-GRUB_CMDLINE_LINUX=""
+GRUB_CMDLINE_LINUX_DEFAULT=""
+GRUB_CMDLINE_LINUX="nvidia-drm.modeset=1 elevator=bfq resume=UUID=97ccfdd4-d494-4947-93c3-cf0f735dc6e4"
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
