@@ -10,6 +10,7 @@ IgnorePath '/bin/*' # Only edited files are Ruby's
 IgnorePath '/usr/bin/*' # Same "
 IgnorePath '/var/.updated'
 IgnorePath '/etc/.updated'
+IgnorePath '/etc/.pwd.lock'
 IgnorePath '/srv/*'
 
 IgnorePath '/etc/grub.d/backup/*'
