@@ -1,6 +1,0 @@
-[Unit]
-Description=Hibernate
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/sbin/auto-hibernate-and-resume

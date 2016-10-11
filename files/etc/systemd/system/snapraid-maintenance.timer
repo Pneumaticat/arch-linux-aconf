@@ -2,7 +2,7 @@
 Description=Runs SnapRAID maintenance every day
  
 [Timer]
-OnCalendar=Mon-Sun, 7:00
+OnCalendar=Mon-Sun, 9:00
 Persistent=true
  
 [Install]

@@ -1,5 +1,5 @@
 [Unit]
-Description=Automatically hibernate on a schedule
+Description=Automatically shutdown and resume on a schedule
 
 [Timer]
 OnCalendar=*-*-* 23:00:00

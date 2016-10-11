@@ -18,4 +18,4 @@ echo "Setting wake timer..."
 
 rtcwake --mode no --time $wake_time
 
-systemctl hibernate
+systemctl poweroff

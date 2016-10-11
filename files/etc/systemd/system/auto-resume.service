@@ -1,6 +1,0 @@
-[Unit]
-Description=Does nothing
-
-[Service]
-Type=oneshot
-ExecStart=/bin/echo Resumed

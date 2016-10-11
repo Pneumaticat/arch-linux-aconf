@@ -1,0 +1,6 @@
+[Unit]
+Description=Shutdown and Resume
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/auto-shutdown-and-resume
