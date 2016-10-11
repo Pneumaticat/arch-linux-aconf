@@ -1,5 +1,3 @@
-
-CopyFile /etc/NetworkManager/system-connections/Ethernet 600
 CreateLink /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service /usr/lib/systemd/system/NetworkManager.service
 CreateLink /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service /usr/lib/systemd/system/NetworkManager-dispatcher.service 
 
