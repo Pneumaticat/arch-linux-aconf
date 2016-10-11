@@ -124,6 +124,7 @@ IgnorePath '/usr/lib/gtk-3.0/3.0.0/immodules.cache'
 IgnorePath '/etc/lvm/cache/.cache' # "The vgscan command scans all supported disk devices in the system looking for LVM physical volumes and volume groups. This builds the LVM cache in the /etc/lvm/.cache file, which maintains a listing of current LVM devices."
 
 IgnorePath '/usr/share/perl5/vendor_perl/XML/SAX/ParserDetails.ini'
+IgnorePath 'CopyFile /usr/share/kgeography/flags/colombia/arauca.png' # ???
 
 # === Packages! ===
 
