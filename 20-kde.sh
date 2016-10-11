@@ -49,4 +49,6 @@ AddPackage milou # A dedicated search application built on top of Baloo
 AddPackage qt5-virtualkeyboard # Virtual keyboard framework
 
 CopyFile /etc/sddm.conf
+CopyFile /usr/share/sddm/themes/breeze/theme.conf.user
+CreateFile /usr/share/sddm/themes/elarun/theme.conf.user > /dev/null
 CreateLink /etc/systemd/system/display-manager.service /usr/lib/systemd/system/sddm.service

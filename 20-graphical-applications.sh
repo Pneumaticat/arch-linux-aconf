@@ -19,6 +19,9 @@ AddPackage chromium # The open-source project behind Google Chrome, an attempt a
 AddPackage codeblocks # Cross-platform C/C++ IDE
 AddPackage atom # A hackable text editor for the 21st Century
 AddPackage banshee # Music management and playback for GNOME
+    # Optional dependencies
+    AddPackage gst-libav # Gstreamer libav Plugin
+    AddPackage gst-plugins-ugly # GStreamer Multimedia Framework Ugly Plugins
 AddPackage bless # A high-quality, full-featured hex editor
 AddPackage steam # Valve's digital software delivery system
 AddPackage steam-native-runtime # Native replacement for the Steam runtime
