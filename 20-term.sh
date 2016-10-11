@@ -24,6 +24,7 @@ AddPackage vim # Vi Improved, a highly configurable, improved version of the vi 
 AddPackage vim-airline # Lean & mean statusline/tabline for ViM
 
 ## Misc
+AddPackage screenfetch # CLI Bash script to show system/theme info in screenshots
 AddPackage gpm
     CopyFile /etc/conf.d/gpm
     CreateLink /etc/systemd/system/multi-user.target.wants/gpm.service /usr/lib/systemd/system/gpm.service
