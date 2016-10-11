@@ -3,13 +3,13 @@
 #
 # <file system>					<dir>			<type>		<options>										<dump>	<pass>
 # BTRFS subvolumes --
-UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/home			btrfs		defaults,subvol=@home									0	0
-UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/.snapshots		btrfs		defaults,subvol=@snapshots								0	0
 
-UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/var/tmp		btrfs		defaults,subvol=@tmp									0	0
-UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/var/cache/pacman/pkg	btrfs		defaults,subvol=@pacman-cache								0	0
-UUID=d1232a39-479a-45ca-b954-02e9067b6b41	/srv/docker		btrfs		defaults,subvol=@srv   								  	0	0
-UUID=d1232a39-479a-45ca-b954-02e9067b6b41       /boot             btrfs           defaults,subvol=@boot                                                                    0       0
+
+
+
+
+
+
 
 UUID=0276-F83E					/boot/efi		vfat		defaults										0	2
 

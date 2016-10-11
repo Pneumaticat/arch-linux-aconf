@@ -1,6 +1,5 @@
 # === Files ===
 
-IgnorePath '/.snapshots/*' # BTRFS snapshots
 IgnorePath '/var/tmp/*'
 IgnorePath '/var/lib/*'
 IgnorePath '/var/log/*'
